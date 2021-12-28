@@ -11,6 +11,9 @@
 		E126386E277B270600774AE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126386D277B270600774AE0 /* ContentView.swift */; };
 		E1263870277B270700774AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E126386F277B270700774AE0 /* Assets.xcassets */; };
 		E1263873277B270700774AE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1263872277B270700774AE0 /* Preview Assets.xcassets */; };
+		E126387B277B273700774AE0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E126387A277B273700774AE0 /* SDWebImageSwiftUI */; };
+		E126387D277B276E00774AE0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126387C277B276E00774AE0 /* PlayerView.swift */; };
+		E126387F277B543900774AE0 /* Player2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126387E277B543900774AE0 /* Player2View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		E126386D277B270600774AE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E126386F277B270700774AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1263872277B270700774AE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E126387C277B276E00774AE0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		E126387E277B543900774AE0 /* Player2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E126387B277B273700774AE0 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +59,10 @@
 			children = (
 				E126386B277B270600774AE0 /* Catch_The_FishApp.swift */,
 				E126386D277B270600774AE0 /* ContentView.swift */,
+				E126387C277B276E00774AE0 /* PlayerView.swift */,
 				E126386F277B270700774AE0 /* Assets.xcassets */,
 				E1263871277B270700774AE0 /* Preview Content */,
+				E126387E277B543900774AE0 /* Player2View.swift */,
 			);
 			path = "Catch The Fish";
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Catch The Fish";
+			packageProductDependencies = (
+				E126387A277B273700774AE0 /* SDWebImageSwiftUI */,
+			);
 			productName = "Catch The Fish";
 			productReference = E1263868277B270600774AE0 /* Catch The Fish.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = E126385F277B270600774AE0;
+			packageReferences = (
+				E1263879277B273700774AE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = E1263869277B270600774AE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E126387D277B276E00774AE0 /* PlayerView.swift in Sources */,
 				E126386E277B270600774AE0 /* ContentView.swift in Sources */,
+				E126387F277B543900774AE0 /* Player2View.swift in Sources */,
 				E126386C277B270600774AE0 /* Catch_The_FishApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +291,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +321,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1263879277B273700774AE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E126387A277B273700774AE0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1263879277B273700774AE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1263860277B270600774AE0 /* Project object */;
 }
